@@ -1,0 +1,165 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   ------------------------------------- INICIO ITred Spa Checkout .CSS ------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: ESTILOS GLOBALES */
+	
+    /* Estilos globales */
+    * {
+        box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+        margin: 0; /* Sin margen por defecto */
+        padding: 0; /* Sin padding por defecto */
+        font-family: "Nunito", sans-serif; /* Establece la fuente */
+        font-size: 16px; /* Tamaño de fuente reducido */
+    }
+
+    body {
+        background-color: #ffffff; /* Fondo blanco */
+        margin-top: 50px; /* Espacio superior reducido */
+    }
+
+/* TITULO: CONTENEDOR PRINCIPAL */
+	
+    /* Contenedor principal */
+    .container {
+        max-width: 600px; /* Ancho máximo reducido */
+        margin: 20px auto; /* Centrado con margen reducido */
+        padding: 15px; /* Padding ajustado */
+        background-color: #f9f9f9; /* Fondo gris claro */
+        border-radius: 8px; /* Bordes redondeados */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    }
+
+/* TITULO: TITULO PRINCIPAL */
+	
+    /* Estilo del título principal */
+    h1 {
+        text-align: center; /* Centra el texto */
+        color: #1b3039; /* Color oscuro */
+        font-size: 24px; /* Tamaño de fuente reducido */
+    }
+
+/* TITULO: GRUPO DE FORMULARIOS */
+        
+    /* Estilo para grupos de formularios */
+    .form-group {
+        margin-bottom: 15px; /* Espacio inferior reducido */
+    }
+
+/* TITULO: ETIQUETAS */
+	
+    /* Estilo de las etiquetas */
+    label {
+        display: block; /* Muestra como bloque */
+        margin-bottom: 5px; /* Margen inferior */
+        color: #1b3039; /* Color oscuro */
+    }
+
+/* TITULO: CAMPOS DE ENTRADA */
+	
+    /* Estilos para campos de entrada */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%; /* Ancho completo */
+        padding: 8px; /* Padding ajustado */
+        border: 1px solid #ccc; /* Borde gris claro */
+        border-radius: 4px; /* Bordes redondeados */
+        font-size: 14px; /* Tamaño de fuente reducido */
+    }
+
+/* TITULO: ESTILOS DE BOTONES */
+	
+    /* Estilos para botones */
+    .botones {
+        display: flex; /* Usar flexbox para distribución */
+        justify-content: space-between; /* Espacio entre botones */
+        margin-top: 20px; /* Margen superior */
+    }
+
+    button {
+        background-color: #1b3039; /* Color de fondo */
+        color: #eceff1; /* Color de texto claro */
+        border: none; /* Sin borde */
+        border-radius: 30px; /* Bordes redondeados */
+        padding: 8px 16px; /* Padding ajustado */
+        cursor: pointer; /* Cambia el cursor al pasar */
+        font-weight: 600; /* Grosor de fuente ajustado */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+        margin: 0 10px; /* Espacio lateral entre botones */
+    }
+
+    button:hover {
+        background-color: #ffbc0e; /* Cambia el color al pasar el ratón */
+        transform: scale(1.03); /* Efecto de aumento al pasar el ratón */
+    }
+
+/* TITULO: CUADRO DE PRODUCTOS */
+	
+    /* Estilos para el cuadro de productos */
+    .products-box {
+        background-color: #e9ecef; /* Fondo gris claro */
+        padding: 15px; /* Padding ajustado */
+        border-radius: 5px; /* Bordes redondeados */
+        margin-bottom: 15px; /* Espacio inferior */
+    }
+
+    .products-box h2 {
+        margin-top: 0; /* Sin margen superior */
+        font-size: 20px; /* Tamaño de fuente ajustado */
+    }
+
+/* TITULO: TABLAS DE PRODUCTOS */
+	
+    /* Estilos para tablas de productos */
+    .products-box table {
+        width: 100%; /* Ancho completo */
+        border-collapse: collapse; /* Sin espacio entre bordes */
+    }
+
+    .products-box th, .products-box td {
+        padding: 8px; /* Padding ajustado */
+        text-align: left; /* Alineación a la izquierda */
+        border-bottom: 1px solid #ddd; /* Borde inferior */
+    }
+
+    .products-box th {
+        background-color: #f8f9fa; /* Fondo gris claro */
+        font-weight: bold; /* Negrita */
+    }
+
+/* TITULO: CUADRO ESPECIAL */
+	
+    /* Estilos para el cuadro especial */
+    .special-box {
+        background-color: #f0f8ff; /* Fondo azul claro */
+        padding: 15px; /* Padding ajustado */
+        border: 2px solid #007bff; /* Borde azul */
+        border-radius: 5px; /* Bordes redondeados */
+        margin-bottom: 15px; /* Espacio inferior */
+    }
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   -------------------------------------- FIN ITred Spa Checkout .CSS --------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/

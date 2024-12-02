@@ -1,0 +1,225 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   ------------------------------------- INICIO ITred Spa Catalogo .CSS ------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: ESTILOS GLOBALES */
+
+    /* Estilos globales */
+    body {
+        font-family: Arial, sans-serif; /* Fuente del texto */
+        background-color: #f4f4f4; /* Color de fondo */
+        color: #333; /* Color del texto */
+        margin: 0; /* Margen exterior */
+        padding: 0; /* Relleno interno */
+        box-sizing: border-box; /* Caja de tamaño para incluir bordes y relleno */
+        display: flex; /* Usar flexbox */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        min-height: 70vh; /* Altura mínima */
+    }
+
+/* TITULO: CONTENEDOR PRINCIPAL */
+
+    /* Contenedor principal */
+    .container {
+        max-width: 840px; /* Ancho máximo */
+        margin: 0 auto; /* Centrar horizontalmente */
+        padding: 35px 14px; /* Relleno interno */
+        display: flex; /* Usar flexbox */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        flex-direction: column; /* Dirección de los elementos en columna */
+    }
+
+/* TITULO: CATALOGO */
+
+    /* Estilos para el catálogo */
+    .catalogo {
+        display: grid; /* Usar grid para disposición */
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+        gap: 14px; /* Espacio entre los elementos */
+        justify-items: center; /* Centrar los elementos dentro de la celda */
+        padding: 14px; /* Relleno interno */
+        margin-top: 35px; /* Margen superior */
+    }
+
+/* TITULO: PRODUCTO */
+
+    /* Estilo para cada producto */
+    .producto {
+        position: relative; /* Posicionamiento relativo para elementos hijos */
+        border: 1px solid #ddd; /* Borde alrededor del producto */
+        border-radius: 6px; /* Bordes redondeados */
+        overflow: hidden; /* Ocultar contenido desbordante */
+        text-align: center; /* Alinear el texto al centro */
+        background-color: #fff; /* Color de fondo */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra alrededor */
+        display: flex; /* Usar flexbox */
+        flex-direction: column; /* Disposición en columna */
+        padding: 10px; /* Relleno interno */
+        min-height: 245px; /* Altura mínima */
+    }
+
+/* TITULO: IMAGEN DEL PRODUCTO */
+
+    /* Contenedor de la imagen del producto */
+    .imagen-contenedor {
+        position: relative; /* Posicionamiento relativo */
+        flex: 1; /* Expandir para llenar el espacio disponible */
+        display: flex; /* Usar flexbox */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        overflow: hidden; /* Ocultar contenido desbordante */
+    }
+
+/* Estilo para la imagen del producto */
+    .imagen-contenedor img {
+        width: 100%; /* Ancho completo */
+        height: 140px; /* Altura de la imagen */
+        object-fit: cover; /* Mantener la proporción de la imagen */
+    }
+
+/* TITULO: ICONO DE VISTA */
+
+    /* Estilo para el ícono de ojo */
+    .view-icon {
+        position: absolute; /* Posicionamiento absoluto */
+        top: 50%; /* Centrar verticalmente */
+        left: 50%; /* Centrar horizontalmente */
+        transform: translate(-50%, -50%); /* Ajustar para centrar */
+        background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        border-radius: 50%; /* Bordes redondeados */
+        padding: 7px; /* Relleno interno */
+        color: #fff; /* Color del texto */
+        font-size: 16px; /* Tamaño de la fuente */
+        text-align: center; /* Alinear el texto al centro */
+        display: none; /* Ocultar inicialmente */
+    }
+
+    .imagen-contenedor:hover .view-icon {
+        display: block; /* Mostrar al pasar el ratón */
+    }
+
+/* TITULO: ICONO DEL CARRITO */
+
+    /* Estilo para el ícono del carrito */
+    .carrito-icono {
+        position: absolute; /* Posicionamiento absoluto */
+        bottom: 7px; /* Distancia desde la parte inferior */
+        right: 7px; /* Distancia desde la derecha */
+        background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        color: white; /* Color del texto */
+        padding: 7px; /* Relleno interno */
+        border-radius: 50%; /* Bordes redondeados */
+        font-size: 14px; /* Tamaño de la fuente */
+        text-decoration: none; /* Sin subrayado */
+    }
+
+.carrito-icono:hover {
+    background: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el ratón */
+}
+
+/* TITULO: TITULO DEL PRODUCTO */
+
+    /* Estilo para el título del producto */
+    h2 {
+        margin: 7px 0; /* Margen superior e inferior */
+        font-size: 12px; /* Tamaño de la fuente */
+        color: #333; /* Color del texto */
+    }
+
+/* TITULO: DESCRIPCIÓN DEL PRODUCTO */
+
+    /* Estilo para el párrafo de producto */
+    p {
+        font-size: 10px; /* Tamaño de la fuente */
+        color: #666; /* Color del texto */
+        padding: 0 7px 7px; /* Relleno interno */
+    }
+
+/* TITULO: BOTÓN PARA AGREGAR AL CARRITO */
+
+    /* Botón para agregar al carrito */
+    .boton-carrito {
+        display: inline-block; /* Mostrar como bloque en línea */
+        padding: 7px 10px; /* Relleno interno */
+        background-color: #1b3039; /* Color de fondo */
+        color: #eceff1; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 5px; /* Bordes redondeados */
+        margin-top: 14px; /* Margen superior */
+        transition: background-color 0.3s; /* Transición suave */
+    }
+
+.boton-carrito:hover {
+    background-color: #ffbc0e; /* Cambiar color al pasar el ratón */
+}
+
+/* TITULO: BOTÓN "IR AL CARRITO" */
+
+    /* Estilo para el botón "Ir al carrito" en el nav o cualquier otra parte */
+    .ir-carrito {
+        padding: 10px 20px; /* Relleno interno */
+        background-color: #1b3039; /* Color de fondo */
+        color: #eceff1; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 14px; /* Tamaño de la fuente */
+        display: inline-block; /* Mostrar como bloque en línea */
+        transition: background-color 0.3s ease; /* Transición suave */
+        margin-left: 14px; /* Espacio entre botones */
+    }
+
+.ir-carrito:hover {
+    background-color: #ffbc0e; /* Color al pasar el ratón */
+}
+
+/* TITULO: CONTENEDOR PARA LOS BOTONES */
+
+    /* Contenedor para los botones */
+    .botones-container {
+        display: flex; /* Usar flexbox */
+        justify-content: center; /* Centrar horizontalmente */
+        margin-top: 20px; /* Margen superior */
+        gap: 20px; /* Espacio entre los botones */
+    }
+
+/* TITULO: BOTÓN DE PRODUCTOS DESTACADOS */
+
+    /* Estilo para el botón de productos destacados */
+    .ir-productos {
+        padding: 10px 20px; /* Relleno interno */
+        background-color: #1b3039; /* Color de fondo */
+        color: #eceff1; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        border-radius: 5px; /* Bordes redondeados */
+        font-size: 14px; /* Tamaño de la fuente */
+        display: inline-block; /* Mostrar como bloque en línea */
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+
+    .ir-productos:hover {
+        background-color: #ffbc0e; /* Color al pasar el ratón */
+    }
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   -------------------------------------- FIN ITred Spa Catalogo .CSS --------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.

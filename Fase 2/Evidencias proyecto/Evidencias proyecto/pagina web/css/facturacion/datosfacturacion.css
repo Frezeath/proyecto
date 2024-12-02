@@ -1,0 +1,218 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------- INICIO ITred Spa datosfacturacion .CSS ---------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: VARIABLES CSS */
+
+    /* Define los colores y fuentes que se utilizarán en todo el sitio */
+    :root {
+        --color-fondo: #f9f9f9;           /* Color de fondo general de la página, un tono gris muy claro */
+        --color-primario: #1b3039;        /* Color principal utilizado en elementos destacados como botones y encabezados */
+        --color-secundario: #333;         /* Color secundario, aplicado principalmente al texto (un gris oscuro) */
+        --color-blanco: #fff;             /* Color blanco puro, usado para fondos o textos sobre fondos oscuros */
+        --color-borde: #ccc;              /* Color de borde, gris claro utilizado para separar o enmarcar elementos */
+        --fuente-principal: 'Arial', sans-serif; /* Fuente principal para el texto de la página, en este caso Arial */
+    }
+
+/* TITULO: RESET Y CONFIGURACIÓN BÁSICA */
+
+    /* Elimina márgenes y rellenos predeterminados, y establece el box-sizing */
+    * {
+        margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+        padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+        box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto de los elementos */
+    }
+
+/* TITULO: ESTILOS DEL CUERPO */
+
+    body {
+        font-family: var(--fuente-principal); /* Aplica la fuente definida en las variables */
+        background-color: var(--color-fondo); /* Aplica el color de fondo definido en las variables */
+        color: var(--color-secundario); /* Aplica el color de texto definido en las variables */
+        padding: 20px; /* Añade un espacio de 20px alrededor del contenido del cuerpo */
+        line-height: 1.6; /* Define la altura de línea para el texto (espaciado entre líneas) */
+    }
+
+/* TITULO: ESTILOS DE LA SECCIÓN DE CHECKOUT */
+
+    .checkout {
+        max-width: 600px; /* Define un ancho máximo de 600px para la sección de checkout */
+        margin: auto; /* Centra el contenedor horizontalmente */
+        background-color: var(--blanco); /* Aplica el color de fondo blanco definido en las variables */
+        border-radius: 8px; /* Añade esquinas redondeadas con un radio de 8px */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aplica una sombra alrededor del contenedor para un efecto de elevación */
+        padding: 20px; /* Añade un espacio interno de 20px */
+    }
+
+/* TITULO: ESTILOS DE LOS ENCABEZADOS */
+
+    h2 {
+        color: var(--color-primario); /* Aplica el color principal definido en las variables */
+        margin-bottom: 20px; /* Añade un margen inferior de 20px para separar el encabezado del contenido siguiente */
+        text-align: center; /* Centra el texto del encabezado */
+    }
+
+/* TITULO: ESTILOS DE LOS PÁRRAFOS */
+
+    .checkout p {
+        margin: 10px 0; /* Añade un margen vertical de 10px a los párrafos dentro de la sección checkout */
+    }
+
+/* TITULO: ESTILOS DE LA TABLA */
+
+    table {
+        width: 100%; /* Hace que la tabla ocupe el 100% del ancho disponible */
+        border-collapse: collapse; /* Elimina el espacio entre bordes de las celdas */
+        margin-top: 20px; /* Añade un margen superior de 20px sobre la tabla */
+    }
+
+/* TITULO: ESTILOS DE CÉLULAS DE LA TABLA */
+
+    table th, table td {
+        padding: 10px; /* Añade un relleno de 10px dentro de cada celda de la tabla */
+        border: 1px solid var(--color-borde); /* Aplica un borde de 1px con el color definido en las variables */
+        text-align: left; /* Alinea el texto a la izquierda dentro de las celdas */
+    }
+
+/* TITULO: ESTILOS DE LOS ENCABEZADOS DE TABLA */
+
+    table th {
+        background-color: var(--color-primario); /* Aplica el color de fondo principal a los encabezados de la tabla */
+        color: var(--blanco); /* Aplica el color de texto blanco a los encabezados */
+    }
+
+/* TITULO: ESTILOS DE FILAS PARES EN LA TABLA */
+
+    table tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* Aplica un color de fondo a las filas pares para diferenciar entre ellas */
+    }
+
+/* TITULO: ESTILOS DE FILAS AL PASAR EL MOUSE */
+
+    table tbody tr:hover {
+        background-color: #f7f4db; /* Aplica un color de fondo cuando el cursor pasa sobre la fila */
+    }
+
+/* TITULO: ESTILOS PARA DISPOSITIVOS MÓVILES */
+
+    @media (max-width: 768px) {
+        body {
+            padding: 10px; /* Reduce el relleno a 10px en dispositivos con un ancho de pantalla menor o igual a 768px */
+        }
+
+        .checkout {
+            padding: 15px; /* Reduce el espacio interno a 15px en el contenedor checkout en pantallas más pequeñas */
+        }
+    }
+
+/* TITULO: ESTILOS PARA TEXTO CLARO */
+
+    .colorletra {
+        color: #f2f2f2; /* Aplica un color de texto claro (casi blanco) */
+    }
+
+/* TITULO: ESTILOS DE BOTONES */
+
+    .btn {
+        padding: 10px 20px; /* Añade un relleno de 10px vertical y 20px horizontal para los botones */
+        background-color: #1b3039; /* Aplica un color de fondo oscuro a los botones */
+        color: #eceff1; /* Aplica un color de texto claro a los botones */
+        text-decoration: none; /* Elimina el subrayado de los botones si son enlaces */
+        border-radius: 5px; /* Aplica bordes redondeados con un radio de 5px */
+    }
+
+/* TITULO: ESTILOS DE BOTONES PARA VOLVER AL CATÁLOGO */
+
+    .btn.volver-catalogo {
+        margin-bottom: 15px; /* Añade un margen inferior de 15px a los botones de "volver al catálogo" */
+    }
+
+
+/* -----------------------------------------------------------
+   ESTILOS PARA LA SECCIÓN DE DETALLES BANCARIOS
+   ----------------------------------------------------------- */
+
+/* --- Contenedor Principal para Detalles Bancarios --- */
+.bank-details {
+    margin-top: 20px; /* Espacio superior para separar del contenido anterior */
+}
+
+/* Título principal de la sección */
+.bank-details h3 {
+    text-align: center; /* Centra el texto */
+    font-size: 20px; /* Tamaño de fuente del título */
+    margin-bottom: 15px; /* Espacio inferior para separar del contenido */
+    color: #333; /* Color gris oscuro */
+}
+
+/* ESTILOS PARA LA TABLA DE DETALLES BANCARIOS */
+
+    /* Tabla principal */
+    .bank-details-table {
+        width: 100%; /* Ancho completo del contenedor */
+        border-collapse: collapse; /* Colapsa los bordes para que se vean como uno solo */
+        margin-top: 10px; /* Espacio superior */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tabla */
+        border-radius: 5px; /* Bordes redondeados */
+        overflow: hidden; /* Asegura que el contenido no se salga de los bordes redondeados */
+    }
+
+
+    /* --- Encabezado de la Tabla --- */
+    .bank-details-table thead th {
+        background-color: #2c3e50; /* Color de fondo oscuro para el encabezado */
+        color: #ffffff; /* Texto blanco para contraste */
+        font-weight: bold; /* Texto en negrita */
+        padding: 12px; /* Relleno interno para hacer el texto más legible */
+        text-align: left; /* Alineación del texto a la izquierda */
+    }
+
+/*  ESTILOS PARA EL CUERPO DE LA TABLA */
+
+    /* Celdas del cuerpo de la tabla */
+    .bank-details-table tbody td {
+        background-color: #f8f8f8; /* Fondo claro para las filas */
+        padding: 12px; /* Relleno interno */
+        color: #333; /* Color del texto gris oscuro */
+        border-bottom: 1px solid #ddd; /* Línea inferior sutil para separar filas */
+    }
+
+    /* Filas alternadas para mejorar legibilidad */
+    .bank-details-table tbody tr:nth-child(even) td {
+        background-color: #e9ecef; /* Fondo ligeramente más oscuro para filas pares */
+    }
+
+    /* Texto en negrita para los títulos dentro de las celdas */
+    .bank-details-table tbody td strong {
+        color: #2c3e50; /* Color más oscuro para destacar */
+    }
+
+    /* Efecto Hover: Cambio de color al pasar el cursor sobre una fila */
+    .bank-details-table tbody tr:hover td {
+        background-color: #dfe6e9; /* Fondo más claro al hacer hover */
+    }
+        
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------- FIN ITred Spa datosfacturacion .CSS --------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/

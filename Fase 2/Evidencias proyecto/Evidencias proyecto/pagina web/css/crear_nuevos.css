@@ -1,0 +1,130 @@
+/* Estilos generales */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #f9f6f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Estilo de la cabecera principal */
+h1 {
+    font-size: 2.4rem;
+    color: #ff8c00;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+}
+
+/* Estilo para los mensajes de estado */
+h2.status-success,
+h2.status-error {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Estilo para éxito */
+h2.status-success {
+    color: #fba52b; /* Verde para éxito */
+}
+
+/* Estilo para error */
+h2.status-error {
+    color: #e53935; /* Rojo para error */
+}
+
+/* Estilo para los detalles del envío */
+p {
+    font-size: 1.1rem;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* Resaltar las etiquetas de texto */
+strong {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Cuadro de información dentro del contenedor */
+.info-box {
+    background-color: #f9f9f9;
+    border-left: 5px solid #f29b28;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h2.status-success,
+    h2.status-error {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Transiciones y detalles adicionales */
+button,
+input[type="submit"] {
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #e67e00;
+}
+
+button:focus,
+input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.5);
+}

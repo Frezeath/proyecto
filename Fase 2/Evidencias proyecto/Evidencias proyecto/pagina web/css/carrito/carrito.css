@@ -1,0 +1,264 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* -------------------------------------------------------------------------------------------------------------
+   ------------------------------------- INICIO ITred Spa Carrito .CSS -------------------------------------
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: ESTILOS GLOBALES */
+
+    /* Estilos generales para el carrito de compras */
+    .container {
+        max-width: 1200px; /* Establece el ancho máximo del contenedor a 1200px */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 20px; /* Añade un espacio interior de 20px */
+    }
+
+    h1 {
+        text-align: center; /* Centra el texto del título */
+        color: #333; /* Establece el color del texto a un gris oscuro */
+        margin-bottom: 20px; /* Añade un margen inferior de 20px */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Añade un relleno interno de 10px vertical y 20px horizontal */
+        background-color: #1b3039; /* Color de fondo oscuro para los botones */
+        color: #eceff1; /* Color del texto claro en los botones */
+        text-decoration: none; /* Elimina el subrayado de los enlaces (botones) */
+        border-radius: 5px; /* Bordes redondeados de 5px */
+    }
+
+    .btn:hover {
+        background-color: #ffbc0e; /* Cambia el fondo a un amarillo al pasar el mouse */
+        color: #333; /* Cambia el color del texto a gris oscuro al pasar el mouse */
+    }
+
+    .btn.volver-catalogo {
+        margin-bottom: 15px; /* Añade un margen inferior de 15px en el botón de volver */
+    }
+
+/* TITULO: ESTILOS DE TABLA */
+
+    /* Tabla del carrito */
+    .table {
+        width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+        margin-bottom: 20px; /* Añade un margen inferior de 20px */
+        border-collapse: collapse; /* Elimina los espacios entre las celdas de la tabla */
+    }
+
+    .table th,
+    .table td {
+        padding: 10px; /* Añade 10px de espacio dentro de las celdas */
+        text-align: center; /* Centra el contenido de las celdas */
+        border: 1px solid #ddd; /* Añade un borde gris claro alrededor de las celdas */
+    }
+
+    .table th {
+        background-color: #f4f4f4; /* Color de fondo gris claro para las celdas de encabezado */
+        color: #333; /* Color de texto gris oscuro para los encabezados */
+    }
+
+    .table td {
+        background-color: #f9f9f9; /* Color de fondo ligeramente más claro para las celdas */
+    }
+
+    .eliminar .btn {
+        background-color: #ff4e4e; /* Color de fondo rojo para los botones de eliminar */
+        color: white; /* Texto blanco en los botones de eliminar */
+    }
+
+    .eliminar .btn:hover {
+        background-color: #ff3333; /* Color rojo más oscuro al pasar el mouse por el botón de eliminar */
+    }
+
+/* TITULO: ESTILOS DEL FORMULARIO */
+
+    /* Estilos del formulario de facturación y métodos de pago */
+    .form-group {
+        margin-bottom: 20px; /* Añade un margen inferior de 20px entre los grupos de formularios */
+    }
+
+    label {
+        display: block; /* Hace que las etiquetas se muestren en bloque (una por línea) */
+        margin-bottom: 5px; /* Añade un margen inferior de 5px entre la etiqueta y el campo */
+        color: #333; /* Color del texto gris oscuro para las etiquetas */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        width: 100%; /* Establece el ancho al 100% del contenedor */
+        padding: 10px; /* Añade un relleno interno de 10px */
+        border: 1px solid #ddd; /* Bordes grises claros para los campos */
+        border-radius: 5px; /* Bordes redondeados de 5px */
+        font-size: 16px; /* Tamaño de fuente de 16px */
+        color: #333; /* Color del texto gris oscuro */
+    }
+
+    textarea {
+        resize: vertical; /* Permite redimensionar solo en la dirección vertical */
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    select:focus,
+    textarea:focus {
+        border-color: #1b3039; /* Cambia el color del borde al recibir foco a un color oscuro */
+    }
+
+    small.form-text.text-muted {
+        color: #666; /* Color gris medio para el texto de ayuda en los formularios */
+    }
+
+    .botones {
+        display: flex; /* Organiza los botones en una fila flexible */
+        justify-content: space-between; /* Distribuye el espacio uniformemente entre los botones */
+    }
+
+    .botones .btn {
+        width: 48%; /* Establece el ancho de cada botón al 48% del contenedor */
+    }
+
+/* TITULO: ESTILOS DE CHECKOUT */
+
+    /* Sección de métodos de pago y cupones */
+    .checkout-row {
+        display: flex; /* Crea una fila flexible para la sección de checkout */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
+        justify-content: space-between; /* Distribuye el espacio entre las columnas de forma uniforme */
+        margin-top: 40px; /* Añade un margen superior de 40px */
+    }
+
+    .checkout-column {
+        flex: 1; /* Cada columna toma el mismo espacio disponible */
+        padding: 20px; /* Añade un espacio interno de 20px */
+        border: 1px solid #ddd; /* Añade un borde gris claro a las columnas */
+        border-radius: 5px; /* Bordes redondeados de 5px */
+        margin-right: 10px; /* Añade un margen derecho de 10px entre las columnas */
+        background-color: #f9f9f9; /* Color de fondo gris claro */
+    }
+
+/* TITULO: ESTILOS DE COLUMNAS Y ENCABEZADOS */
+
+    /* Estilo para la última columna en la sección de checkout */
+    .checkout-column:last-child {
+        margin-right: 0; /* Elimina el margen derecho de la última columna */
+    }
+
+    /* Estilo para los encabezados en las columnas de checkout */
+    .checkout-column h3 {
+        margin-bottom: 20px; /* Añade un margen inferior de 20px en los encabezados de la columna */
+        color: #1b3039; /* Establece el color del encabezado a un tono oscuro */
+    }
+
+/* TITULO: ESTILOS DE IMÁGENES DE PAGO */
+
+    /* Estilo para las imágenes de métodos de pago */
+    .payment-images img {
+        vertical-align: middle; /* Alinea verticalmente las imágenes en la línea del texto */
+        margin-right: 15px; /* Añade un margen derecho de 15px entre las imágenes */
+    }
+
+    /* Estilo para la última imagen en la sección de métodos de pago */
+    .payment-images img:last-child {
+        margin-right: 0; /* Elimina el margen derecho de la última imagen */
+    }
+
+/* TITULO: ESTILOS DEL BOTÓN DE APLICAR CUPÓN */
+
+    /* Estilo general para el botón de aplicar cupón */
+    button[type="submit"] {
+        background-color: #1b3039; /* Color de fondo oscuro para el botón de enviar */
+        color: white; /* Texto blanco en el botón */
+        border: none; /* Elimina el borde del botón */
+        padding: 10px 15px; /* Añade un relleno interno de 10px vertical y 15px horizontal */
+        border-radius: 5px; /* Bordes redondeados de 5px */
+        cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    }
+
+    /* Estilo para el botón de aplicar cupón al pasar el mouse */
+    button[type="submit"]:hover {
+        background-color: #ffbc0e; /* Cambia el color de fondo a amarillo al pasar el mouse */
+        color: #333; /* Cambia el color del texto a gris oscuro al pasar el mouse */
+    }
+
+/* TITULO: ESTILOS DE RESPONSIVIDAD */
+
+    /* Estilos de responsividad para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .checkout-row {
+            flex-direction: column; /* Cambia la fila a una columna en pantallas pequeñas */
+        }
+
+        .checkout-column {
+            margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+            margin-bottom: 20px; /* Añade un margen inferior entre las columnas en pantallas pequeñas */
+        }
+
+        .botones {
+            flex-direction: column; /* Organiza los botones en columna en pantallas pequeñas */
+        }
+
+        .botones .btn {
+            width: 100%; /* Establece el ancho de los botones al 100% en pantallas pequeñas */
+            margin-bottom: 10px; /* Añade un margen inferior de 10px entre los botones */
+        }
+    }
+
+/* TITULO: ESTILO DE LÍNEA PERSONALIZADA */
+
+    /* Estilo para una línea separadora personalizada */
+    .custom-line {
+        border: none; /* Elimina cualquier borde predefinido */
+        border-top: 2px solid #1b3039; /* Añade una línea superior de 2px de color oscuro */
+        margin: 10px 0; /* Ajusta el margen vertical alrededor de la línea */
+        width: 100%; /* La línea ocupa todo el ancho disponible */
+    }
+
+/* TITULO: ESTILOS PARA EL CONTENEDOR DEL CUPÓN */
+
+    /* Estilo para el contenedor de información del cupón */
+    #cuponContainer p {
+        color: #555; /* Color del texto informativo a un gris medio */
+        font-size: 0.9em; /* Tamaño de fuente ligeramente más pequeño */
+        margin-top: 10px; /* Añade un margen superior de 10px */
+        line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+        font-style: italic; /* Cursiva para dar un toque distintivo */
+    }
+
+/* TITULO: ESTILO PARA EL MENSAJE "TU CARRITO ESTÁ VACÍO" */
+
+    /* Estilo para el mensaje cuando el carrito está vacío */
+    .empty-cart-message {
+        font-size: 1.5rem; /* Tamaño de fuente */
+        color: #555; /* Color del texto */
+        background-color: #fff7d5; /* Color de fondo */
+        padding: 20px; /* Espaciado interno */
+        border-radius: 10px; /* Bordes redondeados */
+        text-align: center; /* Centrar texto */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+        margin-top: 20px; /* Margen superior */
+        margin-bottom: 40px; /* Margen inferior */
+    }
+
+    /* ------------------------------------------------------------------------------------------------------------- 
+   -------------------------------------- FIN ITred Spa Carrito .CSS --------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.

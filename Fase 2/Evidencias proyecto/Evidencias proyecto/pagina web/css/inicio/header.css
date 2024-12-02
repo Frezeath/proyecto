@@ -1,0 +1,169 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   ------------------------------------- INICIO ITred Spa header .CSS ------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: Estilo base para todos los elementos */
+
+    * {
+        /* Estilo base para todos los elementos */
+        box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+        margin: 0; /* Elimina el margen por defecto */
+        padding: 0; /* Elimina el padding por defecto */
+        font-family: "Nunito", sans-serif; /* Establece la fuente */
+        font-size: 14px; /* Tamaño de fuente reducido */
+    }
+
+/* TITULO: Estilo del cuerpo del documento */
+
+    body {
+        /* Estilo para el cuerpo del documento */
+        background-color: #ffffff; /* Color de fondo blanco */
+        margin-top: 60px; /* Margen superior reducido */
+    }
+
+/* TITULO: Estilo del header */
+
+    .header {
+        /* Estilo para el header */
+        background-color: #1b3039; /* Fondo oscuro */
+        color: #eceff1; /* Texto claro */
+        display: flex; /* Usar flexbox para disposición */
+        align-items: center; /* Centra verticalmente los elementos */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        height: 60px; /* Altura del header */
+        padding: 0 3.5%; /* Padding lateral reducido */
+        position: fixed; /* Fijo en la parte superior de la página */
+        width: 100%; /* Ancho completo */
+        top: 0; /* Posición en la parte superior */
+        left: 0; /* Posición en la parte izquierda */
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    }
+
+/* TITULO: Estilo del menú de navegación */
+
+    .nav-links {
+        /* Estilo del menú de navegación */
+        list-style: none; /* Sin viñetas */
+        display: flex; /* Usar flexbox para disposición */
+        justify-content: center; /* Centra horizontalmente */
+    }
+
+    .nav-links li {
+        /* Estilo para los elementos de la lista del menú */
+        display: inline-block; /* Elementos en línea */
+        padding: 0 14px; /* Padding lateral reducido */
+    }
+
+/* TITULO: Estilo de los enlaces del menú */
+
+    .nav-links a {
+        /* Estilo de los enlaces del menú */
+        font-weight: 700; /* Negrita */
+        color: #eceff1; /* Color de texto claro */
+        text-decoration: none; /* Sin subrayado */
+        transition: color 0.3s ease; /* Transición suave para el color */
+    }
+
+/* TITULO: Estilo del hover en los enlaces del menú */
+
+    .nav-links a:hover {
+        /* Cambia el color del texto al pasar el mouse */
+        color: #ffbc0e; /* Color de texto al pasar el ratón */
+    }
+
+/* TITULO: Estilo del menú desplegable */
+
+    .nav-links {
+        /* Estilo para el menú desplegable */
+        list-style: none; /* Sin viñetas */
+        padding: 0; /* Sin padding */
+    }
+
+    .nav-links > li {
+        /* Estilo para los elementos de la lista que contienen el menú desplegable */
+        position: relative; /* Para posicionar el menú desplegable */
+        display: inline-block; /* Elementos en línea */
+    }
+
+/* TITULO: Estilo de los enlaces dentro del menú */
+
+    .nav-links a {
+        /* Estilo de los enlaces del menú desplegable */
+        text-decoration: none; /* Sin subrayado */
+        padding: 10px; /* Padding alrededor del enlace */
+        display: block; /* Convertir en bloque para que ocupe todo el espacio */
+    }
+
+/* TITULO: Estilo del contenido del menú desplegable */
+
+    .dropdown-menu {
+        /* Estilo del menú desplegable */
+        display: none; /* Ocultar el menú por defecto */
+        position: absolute; /* Posicionamiento absoluto para el menú desplegable */
+        background-color: #1b3039; /* Fondo del menú */
+        list-style: none; /* Sin viñetas */
+        padding: 0; /* Sin padding */
+        margin: 0; /* Sin margen */
+        border: 1px solid #ccc; /* Borde del menú */
+    }
+
+/* TITULO: Estilo para mostrar el menú desplegable */
+
+    .nav-links li:hover .dropdown-menu {
+        /* Muestra el menú al pasar el mouse */
+        display: block; /* Mostrar el menú al pasar el mouse */
+    }
+
+/* TITULO: Ancho de las opciones del menú desplegable */
+
+    .dropdown-menu li {
+        /* Estilo para las opciones del menú desplegable */
+        width: 150px; /* Ancho fijo para las opciones */
+    }
+
+/* Estilo para el botón de Atrás */
+.back-button {
+    background-color: #1b3039; /* Fondo oscuro igual al del header */
+    color: #eceff1; /* Color de texto claro igual al del menú */
+    font-weight: 700; /* Negrita, como los enlaces del menú */
+    font-size: 14px; /* Tamaño de fuente igual al del menú */
+    padding: 10px 20px; /* Padding similar al del menú */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Apunta al cursor para indicar que es un botón */
+    margin-right: 20px; /* Espacio a la derecha para separación */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.back-button:hover {
+    background-color: #ffbc0e; /* Cambio de color al pasar el mouse */
+    color: #1b3039; /* Cambiar el color de texto cuando el botón es hover */
+}
+
+.back-button:focus {
+    outline: none; /* Elimina el contorno cuando el botón es seleccionado */
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   -------------------------------------- FIN ITred Spa header .CSS --------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/

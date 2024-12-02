@@ -1,0 +1,715 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------- INICIO ITred Spa Productos .CSS ---------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: ESTILOS GLOBALES */
+
+    /* Estilo general del cuerpo de la página */
+    body {
+        font-family: 'Nunito', sans-serif; /* Fuente principal para todo el texto del sitio */
+        background-color: #f5f5f5; /* Color de fondo de la página en gris claro */
+        color: #333; /* Color del texto en gris oscuro para mejor legibilidad */
+        margin: 0; /* Se eliminan los márgenes predeterminados del navegador */
+        padding: 0; /* Se eliminan los paddings (relleno interno) predeterminados */
+    }
+
+/* TITULO: CONTENEDOR PRINCIPAL DEL PRODUCTO */
+
+    /* Contenedor principal de cada producto */
+    .producto-contenedor {
+        display: flex; /* Utiliza flexbox para organizar el contenido en filas o columnas */
+        justify-content: center; /* Centra los elementos hijos horizontalmente dentro del contenedor */
+        align-items: flex-start; /* Alinea los elementos hijos al inicio del eje vertical */
+        flex-direction: row; /* Los elementos hijos se organizan en una fila */
+        padding: 14px; /* Agrega un espacio interno (padding) de 14px en todo el contenedor */
+        background-color: #fff; /* Fondo blanco para resaltar los productos */
+        border-radius: 7px; /* Bordes redondeados de 7px */
+        box-shadow: 0 2.8px 5.6px rgba(0, 0, 0, 0.5); /* Añade una sombra suave para dar profundidad */
+        max-width: 700px; /* El ancho máximo del contenedor es 700px */
+        margin: 14px auto; /* Añade margen arriba y abajo de 14px, y centra el contenedor horizontalmente */
+    }
+
+/* TITULO: SECCIÓN DE IMAGEN DEL PRODUCTO */
+
+    /* Sección de la imagen del producto */
+    .imagen-producto {
+        flex: 1; /* La imagen ocupará el 50% del contenedor */
+        text-align: center; /* Centra la imagen dentro de su contenedor */
+        margin-right: 14px; /* Añade un espacio de 14px a la derecha de la imagen */
+    }
+
+    /* Estilo para la imagen dentro de la sección de imagen */
+    .imagen-producto img {
+        width: 100%; /* La imagen ocupa el 100% del ancho disponible */
+        height: auto; /* La altura de la imagen se ajusta automáticamente según su proporción */
+        max-width: 280px; /* El ancho máximo de la imagen será de 280px */
+        border-radius: 7px; /* Los bordes de la imagen estarán redondeados con 7px de radio */
+        box-shadow: 0 2.8px 5.6px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil alrededor de la imagen */
+    }
+
+/* TITULO: SECCIÓN DE DETALLES DEL PRODUCTO */
+
+    /* Sección de los detalles del producto */
+    .detalle-producto {
+        flex: 1; /* Los detalles del producto ocuparán el otro 50% del contenedor */
+        text-align: left; /* El texto dentro de los detalles se alineará a la izquierda */
+    }
+
+    /* Título del producto */
+    .detalle-producto h1 {
+        font-size: 1.4rem; /* El tamaño de la fuente del título será de 1.4 rem */
+        margin-bottom: 7px; /* Añade un espacio de 7px debajo del título */
+    }
+
+    /* Descripción del producto */
+    .descripcion-producto {
+        margin-bottom: 14px; /* Añade un espacio de 14px debajo de la descripción */
+        font-size: 0.77rem; /* El tamaño de la fuente para la descripción es 0.77 rem */
+    }
+
+    /* Precio del producto */
+    .precio-producto {
+        font-size: 1.05rem; /* Tamaño de la fuente para el precio */
+        font-weight: bold; /* El texto del precio estará en negrita */
+        color: #ff0000; /* El color del precio será amarillo (#ffbc0e) */
+        margin-bottom: 14px; /* Añade un espacio de 14px debajo del precio */
+    }
+
+/* TITULO: CONTENEDOR DE BOTONES DEL FORMULARIO */
+
+    /* Contenedor para los botones dentro del formulario */
+    .botones-formulario {
+        display: flex; /* Usa flexbox para alinear los botones horizontalmente */
+        gap: 7px; /* Añade un espacio de 7px entre los botones */
+        align-items: center; /* Alinea los botones verticalmente al centro */
+    }
+
+    /* Estilo para el botón de agregar al carrito y volver al catálogo */
+    .btn-agregar-carrito, .btn-volver-catalogo {
+        top: 10;
+        background-color: #1b3039; /* Fondo oscuro para los botones */
+        color: #eceff1; /* Texto de color claro */
+        border: none; /* Sin bordes alrededor de los botones */
+        padding: 7px 14px; /* Añade espacio interno de 7px arriba y abajo, y 14px a los lados */
+        cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+        font-size: 1.05rem; /* Tamaño de la fuente del texto en el botón */
+        border-radius: 3.5px; /* Bordes redondeados en 3.5px */
+        transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para el color de fondo y el texto */
+    }
+
+    /* Efecto hover para los botones (cambiar el color al pasar el ratón) */
+    .btn-agregar-carrito:hover, .btn-volver-catalogo:hover {
+        background-color: #ff0e0e; /* Cambia el fondo a amarillo (#ffbc0e) */
+        color: #1b3039; /* Cambia el color del texto a oscuro (#1b3039) */
+    }
+
+    /* Estilo específico para el botón de volver al catálogo */
+    .btn-volver-catalogo {
+        background-color: #1b3039; /* Fondo oscuro específico para este botón */
+        color: #ffffff; /* Texto blanco */
+        text-decoration: none; /* Elimina el subrayado del texto del botón */
+    }
+
+/* TITULO: CARRUSEL DE PRODUCTOS */
+
+    /* Sección del carrusel de productos */
+    .carrusel-productos {
+        margin: 28px 0; /* Añade 28px de margen arriba y abajo del carrusel */
+        text-align: center; /* Centra el contenido del carrusel */
+    }
+
+    /* Contenedor del carrusel */
+    .carrusel-contenedor {
+        display: flex; /* Usa flexbox para alinear los elementos del carrusel */
+        align-items: center; /* Alinea los elementos verticalmente en el centro */
+        justify-content: center; /* Alinea los elementos horizontalmente en el centro */
+        position: relative; /* Posicionamiento relativo para los botones de navegación */
+        max-width: 100%; /* Ancho máximo del carrusel es el 100% del contenedor padre */
+        overflow: hidden; /* Oculta los elementos que se salen del área visible del carrusel */
+    }
+
+    /* Lista de ítems dentro del carrusel */
+    .carrusel-lista {
+        display: flex; /* Flexbox para alinear los ítems del carrusel en fila */
+        transition: transform 0.5s ease-in-out; /* Transición suave al mover los ítems */
+        width: 400%; /* Ancho de la lista para que puedan verse varios ítems */
+    }
+
+    /* Estilo de los ítems del carrusel */
+    .carrusel-item {
+        flex: 1 0 7%; /* Cada ítem ocupa un 7% del ancho del contenedor */
+        box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+        padding: 7px; /* Añade un padding de 7px alrededor de cada ítem */
+    }
+
+    /* Estilo de las imágenes dentro del carrusel */
+    .carrusel-item img {
+        width: 100%; /* La imagen ocupa el 100% del contenedor del ítem */
+        height: 140px; /* La altura fija de la imagen es de 140px */
+        object-fit: cover; /* Ajusta la imagen para cubrir todo el espacio sin distorsión */
+        border-radius: 7px; /* Bordes redondeados de 7px */
+        box-shadow: 0 2.8px 5.6px rgba(0, 0, 0, 0.2); /* Añade una sombra sutil */
+    }
+
+
+/* TITULO: CARRUSEL DE PRODUCTOS */
+
+    /* Botones de navegación para mover el carrusel */
+    .carrusel-btn {
+        background-color: #1b3039; /* Fondo oscuro para los botones de navegación */
+        color: #eceff1; /* Texto claro */
+        border: none; /* Sin bordes en los botones */
+        padding: 7px; /* Espaciado interno de 7px */
+        cursor: pointer; /* Cambia el cursor a mano al pasar sobre los botones */
+        font-size: 1.05rem; /* Tamaño de la fuente del texto */
+        border-radius: 3.5px; /* Bordes redondeados de 3.5px */
+        position: absolute; /* Posicionamiento absoluto para los botones */
+        top: 50%; /* Posiciona los botones a la mitad del carrusel verticalmente */
+        transform: translateY(-50%); /* Ajusta la posición vertical de los botones */
+    }
+
+/* TITULO: BOTÓN NAVEGACIÓN ANTERIOR */
+
+    /* Botón de navegación anterior */
+    .prev-btn {
+        left: 7px; /* Posiciona el botón anterior a la izquierda con un margen de 7px */
+    }
+
+/* TITULO: BOTÓN NAVEGACIÓN SIGUIENTE */
+
+    /* Botón de navegación siguiente */
+    .next-btn {
+        right: 3.5px; /* Posiciona el botón siguiente a la derecha con un margen de 3.5px */
+    }
+
+/* TITULO: EFECTO HOVER PARA BOTONES */
+
+    /* Efecto hover para los botones de navegación del carrusel */
+    .carrusel-btn:hover {
+        background-color: #ff0e0e; /* Cambia el fondo del botón a amarillo al pasar el ratón */
+        color: #1b3039; /* Cambia el color del texto a oscuro */
+    }
+
+/* TITULO: IMÁGENES EN EL CONTENEDOR */
+
+    /* Estilo para las imágenes en el contenedor de imágenes */
+    .imagen-contenedor img {
+        width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+        height: 140px; /* Altura fija de 140px para todas las imágenes */
+        object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+        transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+    }
+
+/* TITULO: EFECTO HOVER EN IMÁGENES */
+
+    /* Efecto hover para hacer zoom en la imagen */
+    .imagen-contenedor:hover img {
+        transform: scale(1.05); /* Aumenta el tamaño de la imagen en un 5% al pasar el ratón */
+    }
+
+/* TITULO: ESTILO GENERAL DEL CARRUSEL */
+
+    /* Estilo general del carrusel */
+    .carrusel {
+        position: relative; /* Posicionamiento relativo del carrusel */
+        width: 100%; /* El ancho del carrusel es el 100% del contenedor padre */
+        max-width: 1100px; /* El ancho máximo del carrusel es de 1100px */
+        margin: 0 auto; /* Centra el carrusel horizontalmente */
+        overflow: hidden; /* Oculta el contenido que se desborda */
+    }
+
+/* TITULO: LISTA DE ELEMENTOS DEL CARRUSEL */
+
+    /* Lista de elementos del carrusel */
+    .elementos-carrusel {
+        display: flex; /* Flexbox para alinear los elementos en fila */
+        transition: transform 0.5s ease-in-out; /* Transición suave entre los elementos del carrusel */
+    }
+
+/* TITULO: CADA PRODUCTO DENTRO DEL CARRUSEL */
+
+    /* Cada producto dentro del carrusel */
+    .producto {
+        flex: 0 0 calc(25% - 20px); /* Cada producto ocupa el 25% menos 20px de margen */
+        margin: 10px; /* Añade un margen de 10px alrededor de cada producto */
+        background-color: #f4f4f4; /* Fondo gris claro */
+        border: 1px solid #ccc; /* Borde gris claro alrededor del producto */
+        border-radius: 5px; /* Bordes redondeados de 5px */
+        overflow: hidden; /* Oculta cualquier contenido que desborde el contenedor */
+        transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves para la sombra y el tamaño */
+    }
+
+/* TITULO: CONTENEDOR DE IMAGEN */
+
+    /* Contenedor de la imagen */
+    .imagen-contenedor {
+        position: relative; /* Posiciona el contenedor de forma relativa para poder colocar elementos dentro de él con posicionamiento absoluto */
+        overflow: hidden;   /* Oculta cualquier contenido que sobresalga del área definida por el contenedor */
+        height: 160px;      /* Define una altura fija de 160px para el contenedor */
+    }
+
+/* TITULO: IMAGEN DENTRO DEL CONTENEDOR */
+
+    /* Imagen dentro del contenedor de imagen */
+    .imagen-contenedor img {
+        width: 100%;          /* La imagen ocupa el 100% del ancho disponible en el contenedor */
+        height: 100%;         /* La imagen ocupa el 100% de la altura del contenedor */
+        object-fit: contain;  /* Ajusta la imagen dentro del contenedor manteniendo su proporción sin recortar, aunque queden espacios vacíos */
+        border-bottom: 1px solid #ccc; /* Añade una línea en la parte inferior de la imagen con un borde de 1px sólido de color gris claro (#ccc) */
+        transition: transform 0.3s ease; /* Aplica una transición suave de 0.3 segundos para cualquier transformación (como zoom al hacer hover) */
+    }
+
+    /* Estilo para la galería de miniaturas */
+    .galeria-miniaturas {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .galeria-miniaturas img {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border-color 0.3s;
+    }
+
+    .galeria-miniaturas img:hover {
+        border-color: #000; /* Cambia el color del borde al pasar el ratón */
+    }
+
+    /* Imagen principal */
+    #imagen-principal {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 8px;
+    }
+
+    /* Iconos de colores */
+    .color-seleccion {
+        margin-top: 10px;
+    }
+    
+    .colores {
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+    }
+    
+    .color {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid #ddd;
+    }
+    
+    .color:hover {
+        border: 2px solid #000;
+    }
+    
+
+/* TITULO: CONTENERDOR IZQUIERDO*/
+
+    /* ESTILO DEL CONTENEDOR IZQUIERDO*/ 
+    .filtros {
+        width: 250px;
+        padding: 15px;
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .filtros h3, .filtros h4 {
+        margin-top: 0;
+    }
+    
+    .filtros label {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .filtro-precio, .filtro-color, .filtro-categoria {
+        margin-bottom: 15px;
+    }
+    
+    .btn-aplicar-filtros {
+        padding: 10px 15px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .btn-aplicar-filtros:hover {
+        background-color: #004494;
+    }
+    /* Estilo para el contenedor de pestañas */
+
+    
+.tab-container {
+    display: flex;
+    justify-content: start; /* Alineación a la izquierda */
+    gap: 20px; /* Espacio entre pestañas */
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada pestaña */
+.tab {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    color: #000;
+}
+
+/* Pestaña activa */
+.tab.active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+/* Contenido de las pestañas */
+.tab-content {
+    display: none;
+    padding: 20px;
+    font-size: 15px;
+    color: #333;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Tabla en Información Adicional */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+/* CSS valoraciones*/
+#valoraciones {
+    max-width: px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#valoraciones h2 {
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#valoraciones p {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.stars input[type="radio"]:checked ~ label {
+    color: #f5b301;
+}
+
+.stars label:hover,
+.stars label:hover ~ label {
+    color: #f5b301;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    resize: vertical;
+    font-size: 14px;
+    color: #333;
+}
+
+.name-email {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.field {
+    width: 50%;
+}
+
+.field label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+/* CSS DESCRIPCION*/
+#descripcion {
+    background-color: #ffffff; /* Fondo suave gris claro */
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 33, 111, 0.1); /* Sombra suave */
+    max-width: 800px; /* Ancho máximo */
+    margin: 30px auto; /* Centra horizontalmente con espacio superior/inferior */
+    font-family: 'Arial', sans-serif; /* Tipografía moderna y legible */
+    color: #444; /* Color del texto ligeramente más oscuro */
+}
+
+#descripcion p {
+    font-size: 14px; /* Tamaño de fuente más compacto */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    text-align: left; /* Alineación a la izquierda */
+    padding-left: 15px; /* Espaciado para destacar el texto */
+    border-left: 4px solid #f5a623; /* Línea vertical decorativa color naranja */
+}
+
+#descripcion p strong {
+    color: #222; /* Color más oscuro para texto destacado */
+    font-weight: bold; /* Negrita para enfatizar información importante */
+}
+
+#descripcion p:first-child {
+    margin-top: 0; /* El primer párrafo no tiene margen superior */
+}
+
+#descripcion p:last-child {
+    margin-bottom: 0; /* El último párrafo no tiene margen inferior */
+}
+
+/* Animación sutil en el hover del contenedor */
+#descripcion:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Mayor profundidad al pasar el cursor */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Ajustar altura del contenedor de la imagen */
+.imagen-contenedor {
+    width: 100%;
+    height: 300px; /* Aumenta la altura de la imagen */
+    overflow: hidden; /* Oculta cualquier exceso de la imagen */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra la imagen dentro del contenedor */
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor sin distorsionarla */
+}
+
+/* Estilo para centrar los botones y separarlos */
+.botones-formulario {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espaciado entre los botones */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo común para los botones */
+.btn-volver-catalogo, .btn-agregar-carrito {
+    background-color: #1b3039; /* Color de fondo */
+    color: #eceff1; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Tamaño uniforme */
+    font-size: 1rem; /* Tamaño del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano al pasar */
+    text-align: center; /* Centrar texto */
+    text-decoration: none; /* Eliminar subrayado */
+    transition: background-color 0.3s, transform 0.2s; /* Efecto suave */
+}
+
+/* Efecto hover */
+.btn-volver-catalogo:hover, .btn-agregar-carrito:hover {
+    background-color: #ff0e0e; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+    transform: scale(1.05); /* Pequeño zoom */
+}
+
+/* Estilo de la sección de productos destacados */
+.productos-destacados-seccion {
+    margin-top: 50px; /* Espacio entre el producto principal y los productos destacados */
+    padding: 20px;
+    background-color: #f8f8f8; /* Fondo claro para la sección */
+    border-radius: 8px;
+}
+
+.productos-destacados-contenedor {
+    display: flex; /* Usa flexbox para alinear los productos en una fila */
+    justify-content: space-between; /* Espacio igual entre los productos */
+    gap: 20px; /* Espacio entre los productos */
+    flex-wrap: nowrap; /* Asegura que los productos estén en una sola fila */
+}
+
+.producto-destacado {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Hace que cada producto ocupe el mismo espacio */
+    max-width: 22%; /* Asegura que cada producto no se estire demasiado */
+    padding-bottom: 20px; /* Para dar un poco más de espacio hacia el final */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación para el hover */
+}
+
+/* Animación al pasar el mouse */
+.producto-destacado:hover {
+    transform: translateY(-10px); /* Mueve el producto hacia arriba */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra más fuerte */
+}
+
+.producto-destacado img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura para que no sea tan grande */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 8px; /* Bordes redondeados en las imágenes */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Añade animación a la imagen */
+}
+
+/* Animación para la imagen al pasar el mouse */
+.producto-destacado:hover img {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen */
+}
+
+.producto-destacado h3 {
+    font-size: 1.2em; /* Aumenta un poco el tamaño del título */
+    margin: 10px 0;
+}
+
+.producto-destacado p {
+    color: #333;
+    font-size: 1.1em; /* Ajusta el tamaño del precio */
+}
+
+.btn-detalles-producto {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Animación para el botón */
+}
+
+/* Animación para el botón al pasar el mouse */
+.btn-detalles-producto:hover {
+    background-color: #2980b9;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------
+   -------------------------------------- FIN ITred Spa Productos .CSS ---------------------------------------
+   ------------------------------------------------------------------------------------------------------------- */
+
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/

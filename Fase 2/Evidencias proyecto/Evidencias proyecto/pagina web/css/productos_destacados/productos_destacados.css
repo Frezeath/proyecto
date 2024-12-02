@@ -1,0 +1,526 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* -------------------------------------------------------------------------------------------------------------
+   ------------------------------------- INICIO ITred Spa Productos_destacados .CSS -------------------------------------
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: ESTILOS GENERALES */
+
+    /* Estilos Generales */
+    body {
+        font-family: 'Nunito', sans-serif; /* Fuente del cuerpo */
+        margin: 0; /* Sin márgenes */
+        padding: 0; /* Sin padding */
+        background-color: #f5f5f5; /* Fondo gris claro */
+        color: #333; /* Color del texto oscuro */
+        font-size: 0.9em; /* Tamaño de fuente ajustado */
+    }
+
+/* TITULO: ESTILOS DEL NAVEGADOR */
+
+    /* Estilos del Navegador */
+    nav {
+        background-color: #1b3039; /* Color de fondo del menú */
+        padding: 10px 0; /* Espaciado interno */
+    }
+
+    nav ul {
+        list-style: none; /* Sin viñetas */
+        display: flex; /* Uso de flexbox para alinear horizontalmente */
+        justify-content: center; /* Centrar elementos */
+        margin: 0; /* Sin margen */
+        padding: 0; /* Sin padding */
+    }
+
+    nav li {
+        margin: 0 12px; /* Espaciado entre elementos del menú */
+    }
+
+    nav a {
+        color: #eceff1; /* Color del texto del menú */
+        text-decoration: none; /* Sin subrayado */
+        font-weight: bold; /* Negrita */
+        font-size: 0.9em; /* Tamaño del texto del menú */
+        transition: color 0.3s; /* Transición de color */
+    }
+
+    nav a:hover {
+        color: #ffbc0e; /* Color al pasar el ratón */
+    }
+
+/* TITULO: ESTILOS DEL CONTENEDOR PRINCIPAL */
+
+    /* Estilos del Contenedor Principal */
+    .container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Centrar el contenido */
+    }
+    
+    /* Título de la sección */
+    .container h2 {
+        font-size: 1.8em;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    
+/* TITULO: ESTILOS DEL TÍTULO */
+
+    /* Estilos del Título */
+    h1 {
+        text-align: center; /* Centrar título */
+        color: #1b3039; /* Color del título */
+        margin-bottom: 20px; /* Margen inferior */
+        font-size: 1.3em; /* Tamaño de fuente del título */
+    }
+
+    h2 {
+        font-size: 1em; /* Tamaño de fuente del subtítulo */
+        margin: 5px 0; /* Margen superior e inferior */
+        text-align: center; /* Centrar subtítulo */
+    }
+
+    p {
+        font-size: 0.8em; /* Tamaño de fuente de la descripción */
+        text-align: center; /* Centrar párrafo */
+        padding: 0 10px; /* Espaciado lateral */
+    }
+
+/* TITULO: ESTILOS DEL CATÁLOGO */
+
+    /* Estilos del Catálogo */
+    .catalogo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; /* Centrar los productos */
+    }
+    
+
+    .producto {
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 250px; /* Ajustar el ancho */
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .producto:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+/* TITULO: CONTENEDOR DE IMAGEN */
+
+.imagen-contenedor {
+    position: relative;
+    overflow: hidden;
+    height: 150px; /* Ajusta la altura */
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.imagen-contenedor:hover img {
+    transform: scale(1.1);
+}
+/* TITULO: ESTILOS DEL ÍCONO DE VISTA */
+
+    /* Estilo del icono de vista */
+    .view-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+    }
+
+    .view-icon:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    
+/* TITULO: ESTILOS DEL BOTÓN "IR AL CATÁLOGO" */
+
+    /* Estilos del Botón "Ir al Catálogo" */
+    .ir-catalogo {
+        text-align: center; /* Centrar el botón */
+        margin-top: 20px; /* Margen superior */
+    }
+    .btn-catalogo {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #1b3039;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .btn-catalogo:hover {
+        background-color: #ffbc0e;
+        transform: translateY(-2px);
+    }
+    
+
+
+/* TITULO: Estilo base para todos los elementos */
+
+    * {
+        /* Estilo base para todos los elementos */
+        box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+        margin: 0; /* Elimina el margen por defecto */
+        padding: 0; /* Elimina el padding por defecto */
+        font-family: "Nunito", sans-serif; /* Establece la fuente */
+        font-size: 14px; /* Tamaño de fuente reducido */
+    }
+
+/* TITULO: Estilo base para todos los elementos */
+
+* {
+    /* Estilo base para todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    font-family: "Nunito", sans-serif; /* Establece la fuente */
+    font-size: 14px; /* Tamaño de fuente reducido */
+}
+
+/* TITULO: Estilo del cuerpo del documento */
+
+body {
+    /* Estilo para el cuerpo del documento */
+    background-color: #ffffff; /* Color de fondo blanco */
+    margin-top: 60px; /* Margen superior reducido */
+}
+
+/* TITULO: Estilo del header */
+
+.header {
+    /* Estilo para el header */
+    background-color: #1b3039; /* Fondo oscuro */
+    color: #eceff1; /* Texto claro */
+    display: flex; /* Usar flexbox para disposición */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+    height: 60px; /* Altura del header */
+    padding: 0 3.5%; /* Padding lateral reducido */
+    position: fixed; /* Fijo en la parte superior de la página */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Posición en la parte superior */
+    left: 0; /* Posición en la parte izquierda */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+/* TITULO: Estilo del menú de navegación */
+
+.nav-links {
+    /* Estilo del menú de navegación */
+    list-style: none; /* Sin viñetas */
+    display: flex; /* Usar flexbox para disposición */
+    justify-content: center; /* Centra horizontalmente */
+}
+
+.nav-links li {
+    /* Estilo para los elementos de la lista del menú */
+    display: inline-block; /* Elementos en línea */
+    padding: 0 14px; /* Padding lateral reducido */
+}
+
+/* TITULO: Estilo de los enlaces del menú */
+
+.nav-links a {
+    /* Estilo de los enlaces del menú */
+    font-weight: 700; /* Negrita */
+    color: #eceff1; /* Color de texto claro */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* TITULO: Estilo del hover en los enlaces del menú */
+
+.nav-links a:hover {
+    /* Cambia el color del texto al pasar el mouse */
+    color: #ffbc0e; /* Color de texto al pasar el ratón */
+}
+
+/* TITULO: Estilo del menú desplegable */
+
+.nav-links {
+    /* Estilo para el menú desplegable */
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.nav-links > li {
+    /* Estilo para los elementos de la lista que contienen el menú desplegable */
+    position: relative; /* Para posicionar el menú desplegable */
+    display: inline-block; /* Elementos en línea */
+}
+
+/* TITULO: Estilo de los enlaces dentro del menú */
+
+.nav-links a {
+    /* Estilo de los enlaces del menú desplegable */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px; /* Padding alrededor del enlace */
+    display: block; /* Convertir en bloque para que ocupe todo el espacio */
+}
+
+/* TITULO: Estilo del contenido del menú desplegable */
+
+.dropdown-menu {
+    /* Estilo del menú desplegable */
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute; /* Posicionamiento absoluto para el menú desplegable */
+    background-color: #1b3039; /* Fondo del menú */
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    border: 1px solid #ccc; /* Borde del menú */
+}
+
+/* TITULO: Estilo para mostrar el menú desplegable */
+
+.nav-links li:hover .dropdown-menu {
+    /* Muestra el menú al pasar el mouse */
+    display: block; /* Mostrar el menú al pasar el mouse */
+}
+
+/* TITULO: Ancho de las opciones del menú desplegable */
+
+.dropdown-menu li {
+    /* Estilo para las opciones del menú desplegable */
+    width: 150px; /* Ancho fijo para las opciones */
+}
+
+/* TITULO: Estilo base para todos los elementos */
+
+* {
+    /* Estilos globales */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total de los elementos */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina los espacios de padding por defecto */
+    font-family: "Nunito", sans-serif; /* Fuente principal de la página */
+    font-size: 14px; /* Tamaño de fuente base */
+}
+
+/* TITULO: Estilo del cuerpo del documento */
+
+body {
+    /* Fondo blanco para el cuerpo */
+    background-color: #ffffff;
+    margin-top: 60px; /* Espacio en la parte superior de la página */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+}
+
+/* TITULO: Estilo del encabezado */
+
+.encabezadoo {
+    /* Estilos del encabezado */
+    background-color: #1b3039;
+    color: #eceff1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alineado a la izquierda */
+    height: 60px;
+    padding-left: 20px; /* Espaciado de 20px a la izquierda */
+    padding-right: 3.5%; /* Mantener el espaciado lateral derecho */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* TITULO: Estilo de los enlaces de navegación */
+
+.enlaces-navegacion {
+    /* Estilos para los enlaces de navegación */
+    list-style: none; /* Elimina las viñetas en la lista */
+    display: flex; /* Organiza los enlaces en línea */
+    justify-content: center; /* Centra horizontalmente los enlaces */
+}
+
+.enlaces-navegacion li {
+    /* Estilo de los elementos de la lista de navegación */
+    display: inline-block; /* Muestra los elementos en línea */
+    padding: 0 14px; /* Espacio entre los enlaces */
+}
+
+/* TITULO: Estilo de los enlaces */
+
+.enlaces-navegacion a {
+    /* Estilo para los enlaces */
+    font-weight: 700; /* Negrita para los enlaces */
+    color: #eceff1; /* Color claro para el texto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.enlaces-navegacion a:hover {
+/* Cambia el color al pasar el ratón */
+    color: #ffbc0e;
+    }
+/* TITULO: Estilo del pie de página */
+
+footer {
+    /* Estilos del pie de página */
+    background-color: #1b3039; /* Fondo oscuro para el pie de página */
+    color: #eceff1; /* Texto claro */
+    padding: 20px 0; /* Espaciado interno superior e inferior */
+    margin-top: auto; /* Empuja el pie de página hacia el fondo */
+    padding-left: 20px; /* Espaciado de 20px a la izquierda */
+}
+
+/* TITULO: Estilo del contenedor del pie de página */
+
+footer .contenedor {
+    /* Estilos para el contenedor del pie de página */
+    display: flex;
+    justify-content: flex-start; /* Alineado a la izquierda */
+    align-items: center;
+    padding-left: 20px; /* Espaciado de 20px a la izquierda */
+}
+
+/* TITULO: Estilo de los títulos en el pie de página */
+
+    footer h1 {
+        /* Tamaño de la fuente para el título */
+        font-size: 24px;
+        margin-bottom: 10px; /* Espacio inferior entre el título y los elementos debajo */
+    }
+
+/* TITULO: Estilo de la lista de enlaces en el pie de página */
+
+    .lista-enlaces-pie {
+        /* Estilos para la lista de enlaces en el pie de página */
+        list-style: none; /* Elimina las viñetas en la lista del pie */
+        padding: 0; /* Sin espacio adicional en la lista */
+    }
+
+    .lista-enlaces-pie li {
+        /* Estilo para los elementos de la lista */
+        margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    }
+
+/* TITULO: Estilo de los enlaces en el pie de página */
+
+    .lista-enlaces-pie a {
+        /* Color claro para los enlaces */
+        color: #eceff1;
+        text-decoration: none; /* Sin subrayado */
+    }
+
+    .lista-enlaces-pie a:hover {
+        /* Cambia el color al pasar el ratón */
+        color: #ffbc0e;
+    }
+
+/* TITULO: Estilo de los subtítulos en el pie de página */
+
+    footer h3 {
+        /* Tamaño de la fuente para el subtítulo */
+        font-size: 24px;
+        margin-bottom: 10px; /* Espacio inferior entre el título y los elementos debajo */
+    }
+    .producto h3 {
+        font-size: 1.2em;
+        color: #333;
+        margin: 10px 0 5px;
+        font-weight: bold;
+    }
+
+    .producto p {
+        font-size: 0.9em;
+        color: #666;
+        margin: 0 10px 15px;
+        text-align: center;
+        
+        /* Ajuste del espacio en descripciones largas */
+        min-height: 3em; /* Ajusta según el tamaño deseado */
+        max-height: 6em; /* Limita el tamaño máximo */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limita a tres líneas */
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+    
+
+/* TITULO: ESTILOS BOTONES*/
+
+    /*ESTILOS BOTONES COMPRAR*/
+    .btn-comprar {
+        display: inline-block;
+        background-color: #333; /* Fondo oscuro */
+        color: #fff; /* Texto blanco */
+        padding: 10px 20px;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .btn-comprar:hover {
+        background-color: #555; /* Fondo más claro en hover */
+    }
+
+    .btn-comprar:before {
+        content: "\2714"; /* Icono de check */
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    
+/* -------------------------------------------------------------------------------------------------------------
+   -------------------------------------- FIN ITred Spa  Productos_destacados .CSS ---------------------------------------
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/

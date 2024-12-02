@@ -1,0 +1,56 @@
+/* TITULO: MENÚ DESPLEGABLE */
+    /* Menú desplegable */ 
+
+    /* Estilo del contenedor del menú desplegable */
+    .desplegable {
+        position: left;
+        display: inline-block;
+    }
+
+    /* Estilo del botón principal */
+    .desplegable .boton {
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Estilo del contenido del menú desplegable */
+    .contenido-desplegable {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 5px;
+        min-width: 160px;
+        z-index: 1;
+        border: 1px solid #ddd;
+    }
+
+    /* Encabezado del catálogo */
+    .encabezado-catalogo {
+        display: flex;
+        justify-content: space-between; /* Mueve el menú a la derecha */
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+
+    /* Estilo de cada opción en el menú desplegable */
+    .contenido-desplegable a {
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+    }
+
+    /* Cambia el color de fondo al pasar el mouse por encima de las opciones */
+    .contenido-desplegable a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Muestra el menú desplegable al pasar el mouse sobre el botón */
+    .desplegable:hover .contenido-desplegable {
+        display: block;
+    }

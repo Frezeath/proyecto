@@ -1,0 +1,33 @@
+/* Estilos básicos para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el icono del carrito */
+.cart-icon {
+    position: fixed;
+    top: 80px; /* Ajustar para dar espacio debajo de la cabecera */
+    right: 20px;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Ajustar el tamaño del icono del carrito */
+.cart-icon img {
+    width: 40px; /* Ancho del icono */
+    height: 40px; /* Alto del icono */
+}
+
+/* Estilo cuando se pasa el ratón sobre el icono */
+.cart-icon:hover {
+    background-color: #ffbc0e; /* Color de fondo cuando se pasa el ratón */
+}

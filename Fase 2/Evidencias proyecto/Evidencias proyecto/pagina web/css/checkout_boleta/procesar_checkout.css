@@ -1,0 +1,81 @@
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   ------------------------------------- INICIO ITred Spa Procesar_Checkout .CSS ------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* TITULO: ESTILOS GLOBALES */
+
+    body {
+        font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
+        background-color: #f4f4f4; /* Fondo gris claro */
+        color: #333; /* Color del texto oscuro */
+        padding: 20px; /* Espacio interior */
+    }
+
+/* TITULO: CONTENEDOR DE BOLETA */
+
+        .boleta-container {
+        max-width: 600px; /* Ancho máximo del contenedor */
+        margin: 0 auto; /* Centrado horizontal */
+        padding: 20px; /* Espacio interior */
+        background-color: #fff; /* Fondo blanco */
+        border: 1px solid #ddd; /* Borde gris claro */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        text-align: center; /* Centra el texto dentro del contenedor */
+    }
+
+/* TITULO: ENCABEZADO */
+
+        h1 {
+        font-size: 1.8em; /* Tamaño de fuente del encabezado */
+        margin-bottom: 20px; /* Margen inferior */
+    }
+
+/* TITULO: PÁRRAFO */
+
+        p {
+        font-size: 1.2em; /* Tamaño de fuente del párrafo */
+        line-height: 1.6; /* Espaciado entre líneas */
+    }
+
+/* TITULO: BOTÓN */
+
+        .btn {
+        margin-top: 20px; /* Margen superior */
+        padding: 10px 20px; /* Padding interno */
+        background-color: #ffbc0e; /* Color de fondo del botón */
+        color: #1b3039; /* Color del texto en el botón */
+        border: none; /* Sin borde */
+        border-radius: 5px; /* Bordes redondeados */
+        cursor: pointer; /* Cambia el cursor al pasar */
+        text-decoration: none; /* Sin subrayado */
+    }
+
+/* TITULO: ESTILO DEL BOTÓN AL PASAR EL RATÓN */
+
+        .btn:hover {
+        background-color: #e0a800; /* Color del botón al pasar el ratón */
+    }
+
+/* ------------------------------------------------------------------------------------------------------------- 
+   -------------------------------------- FIN ITred Spa Procesar_Checkout .CSS --------------------------------------- 
+   ------------------------------------------------------------------------------------------------------------- */
+
+/* 
+Sitio Web Creado por ITred Spa.
+Direccion: Guido Reni #4190
+Pedro Aguirre Cerda - Santiago - Chile
+contacto@itred.cl o itred.spa@gmail.com
+https://www.itred.cl
+Creado, Programado y Diseñado por ITred Spa.
+BPPJ 
+*/

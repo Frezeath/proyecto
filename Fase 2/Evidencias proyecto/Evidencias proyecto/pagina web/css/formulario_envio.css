@@ -1,0 +1,149 @@
+/* Estilos generales */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #ff8c00; /* Color inspirado en Chilexpress */
+    text-align: center;
+    font-weight: 600;
+}
+
+h2 {
+    border-bottom: 2px solid #ff8c00;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para las entradas del formulario */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+    border-color: #ff8c00;
+    box-shadow: 0 0 4px rgba(255, 140, 0, 0.4);
+    outline: none;
+}
+
+/* Estilos para el botón */
+button {
+    background-color: #ff8c00;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #e67c00;
+    transform: scale(1.03);
+}
+
+button:active {
+    background-color: #cc6d00;
+    transform: scale(0.98);
+}
+
+/* Espaciado entre secciones */
+form > h2 + h3 {
+    margin-top: 10px;
+}
+
+/* Estilos para los mensajes de ayuda */
+small {
+    font-size: 0.8rem;
+    color: #777;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para la cabecera de la página */
+header {
+    width: 100%;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Formulario con espacio para el header */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+}
